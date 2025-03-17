@@ -1,0 +1,497 @@
+/*Mise en page*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*Header*/
+.header-bar {
+  display: flex;
+  align-items: baseline;
+}
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-nav a {
+  text-decoration: none;
+}
+.header-nav a:hover {
+  text-decoration-line: underline;
+}
+.header-title {
+  color: #029d5b;
+  padding: 10px;
+  width: 800px;
+  flex: none;
+}
+.header-title span {
+  word-spacing: 0;
+}
+
+/* section banner */
+#banner img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+#banner h1 {
+  text-align: end;
+  margin-top: -300px;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  padding: 50px;
+}
+#banner span {
+  color: yellow;
+  font-size: 5rem;
+}
+/*equipe*/
+.equipe {
+  display: flex;
+  justify-content: space-evenly;
+}
+.equipe-title h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #029d5b;
+}
+.equipe-p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+#equipe h3 p {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 158px;
+  margin-right: 158px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.item p {
+  font-size: x-small;
+  text-align: center;
+}
+/*Satisfaction clients*/
+#satisfaction {
+  background-color: #053b44;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+.client h1 {
+  color: yellow;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.client h3 {
+  color: aliceblue;
+  margin-top: 0;
+}
+/*Services*/
+.service {
+  height: 100px;
+}
+.service h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: #029d5b;
+}
+.servico {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 250px;
+}
+.servico img {
+  background-color: rgb(226, 226, 226);
+  padding: 150px;
+  border-radius: 20px;
+  width: 447px;
+  height: 435px;
+}
+.servico-p {
+  font-size: 2rem;
+  text-align: center;
+}
+/*Formulaire*/
+#contact {
+  background-color: #053b44;
+}
+#contact h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 50px;
+  padding: 50px 0 0 0;
+  color: yellow;
+}
+#contact p {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100vw;
+  padding: 20px;
+  min-height: 50vh;
+  color: white;
+}
+.form-ligne {
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+input {
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  outline: none;
+  padding: 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background: transparent;
+  width: 100%;
+}
+textarea {
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  outline: none;
+  padding: 0px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  background: transparent;
+  width: 100%;
+  margin-top: 100px;
+}
+.mail-message {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  margin-bottom: -10px;
+  padding-right: 550px;
+}
+.buttonsub {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+  width: auto;
+}
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+/*A propos de nous*/
+/* général*/
+#Cnous {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  width: 100%;
+}
+/*photo gauche*/
+.jasong {
+  width: 700px;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+/*boite de droite général*/
+#lorem {
+  border: solid 2px;
+  margin-top: 47px;
+  margin-bottom: 5px;
+  width: 700px;
+  height: 466.667;
+  border-radius: 20px;
+  border-color: #026d5b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Titre + texte dans boite*/
+.titre1,
+.texte1 {
+  text-align: center;
+}
+.titre1 {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+/*logo général dans boite*/
+#logonous {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+/*logo traitements*/
+.log1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vec2,
+.vec3,
+.vec4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #053b44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vec2 {
+  background-image: url("img/vec2.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vec3 {
+  background-image: url("img/vec3.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vec4 {
+  background-image: url("img/vec4.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*texte logo*/
+.textevec2,
+.textevec3,
+.textevec4 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+/*defilement photos*/
+#galerie {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-top: 100px;
+}
+.article {
+  text-align: center;
+}
+.titregalerie {
+  font-size: 3rem;
+  color: #029d5b;
+  margin-bottom: 0;
+}
+#carouselcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  width: 900px;
+  height: 670px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: -350px;
+  object-fit: cover;
+}
+
+.images img.active {
+  opacity: 1;
+  width: 1600px;
+  height: 600px;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: -330px;
+  margin-right: -330px;
+}
+button:hover {
+  background-color: #f5f5f5;
+}
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/*info fin de page*/
+/*general*/
+.info-section {
+  background-color: #0f3a40;
+  padding: 30px 0;
+}
+
+/* Conteneur principal */
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Espace entre les colonnes */
+  align-items: flex-start;
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  gap: 80px;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
+/* Colonnes d'informations */
+.info-column {
+  text-align: left;
+  flex: 1;
+  margin-right: 20px; /* Espacement entre les colonnes */
+}
+
+/* Titres des colonnes */
+.info-column h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+/* Texte des colonnes */
+.info-column p {
+  font-size: 14px;
+  color: #c0c0c0;
+  margin: 3px 0;
+}
+
+/* Colonne contact (Téléphone + Adresse) */
+.info-contact {
+  text-align: left;
+  color: #c0c0c0;
+  flex: 1;
+}
+
+/* Alignement icônes + texte */
+.info-contact p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Style des icônes */
+.info-contact i {
+  color: #c4f029; /* Couleur verte comme sur ton image */
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+  font-size: 18px;
+}
+/*Footer*/
+.footerprojet {
+  width: 100%;
+  background-color: #032227;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footerprojet p {
+  color: white;
+  margin-left: 160px;
+  margin-right: 100px;
+}
+.reseaux {
+  display: flex;
+  word-spacing: 20px;
+  margin-right: 50px;
+}
+.reseaux .logofooter span {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 25%;
+  padding: 3px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.reseaux .logofooter i {
+  font-size: 15px;
+  color: white;
+}
