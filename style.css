@@ -9,18 +9,21 @@ body {
   box-sizing: border-box;
 }
 /*Header*/
-.header-bar {
-  height: 50px;
-}
-.header div {
+.header {
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+}
+.header-bar {
+  width: 10%;
+  color: #029d5b;
 }
 .header-nav {
+  width: 70%;
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
   text-decoration: none;
 }
 .header-nav a {
@@ -29,16 +32,9 @@ body {
 .header-nav a:hover {
   text-decoration: underline;
 }
-.header-title {
-  color: #029d5b;
-  flex: none;
-}
 
 /* section banner */
-#banner {
-  width: 100%;
-  height: auto;
-}
+
 #banner img {
   width: 100%;
   object-fit: cover;
@@ -63,8 +59,6 @@ body {
 }
 /*equipe*/
 #equipe {
-  width: 100%;
-  height: auto;
   margin-top: 50px;
 }
 .equipe-title h1 {
@@ -87,8 +81,9 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 158px;
   margin-right: 158px;
 }
@@ -139,7 +134,8 @@ body {
 }
 /*Services*/
 .service {
-  height: 100px;
+  width: 100%;
+  height: auto;
 }
 .service h1 {
   text-align: center;
@@ -483,8 +479,11 @@ button:hover {
   font-size: 18px;
 }
 /*Footer*/
-.footerprojet {
+footer {
   width: 100%;
+  height: auto;
+}
+.footerprojet {
   background-color: #032227;
   display: flex;
   justify-content: space-between;
@@ -492,8 +491,8 @@ button:hover {
 }
 .footerprojet p {
   color: white;
-  margin-left: 160px;
   margin-right: 100px;
+  padding-left: 160px;
 }
 .reseaux {
   display: flex;
@@ -513,3 +512,47 @@ button:hover {
   font-size: 15px;
   color: white;
 }
+/*
+@media (max-width: 1120px) {
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .info-column {
+    text-align: center;
+  }
+  .footerprojet {
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    padding-left: 20px;
+  }
+  #banner h1 {
+    font-size: 1.5rem;
+    margin-top: -200px;
+  }
+  #banner h1 span {
+    font-size: 2rem;
+  }
+  .footerprojet p {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .info-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1435px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carouselcontainer {
+    flex-basis: 0;
+  }
+}*/

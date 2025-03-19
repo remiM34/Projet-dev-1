@@ -1,0 +1,214 @@
+/* Mise en page responsive */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  background-color: #f4f4f4;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 2px solid #029d5b;
+}
+.header-bar {
+  width: 15%;
+  color: #029d5b;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.header-nav a:hover {
+  text-decoration: underline;
+  color: #029d5b;
+}
+
+/* Section banner */
+#banner {
+  position: relative;
+  text-align: center;
+}
+#banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(2rem, 5vw, 4rem);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#banner span {
+  color: yellow;
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+/* Équipe */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 5%;
+}
+.item {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #029d5b;
+}
+
+/* Satisfaction clients */
+#satisfaction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+.client p {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #029d5b;
+  font-weight: bold;
+}
+.client h3 {
+  color: #333;
+}
+
+/* Services */
+.servico {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 5%;
+  background: #f4f4f4;
+}
+.servico img {
+  width: clamp(200px, 80vw, 447px);
+  height: auto;
+}
+.servico-p {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Formulaire */
+.form-container {
+  padding: 5%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.mail-message {
+  padding: 0;
+}
+.inp {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.buttonsub {
+  background: #029d5b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.buttonsub:hover {
+  background: #027a46;
+}
+
+/* Carousel */
+#galerie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carousel {
+  width: 90vw;
+  max-width: 900px;
+  height: auto;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+.footerprojet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: #029d5b;
+  color: white;
+}
