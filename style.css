@@ -8,23 +8,24 @@ body {
 * {
   box-sizing: border-box;
 }
+
 /*Header*/
+
 .header {
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header-bar {
+.header-title {
+  padding-left: 30px;
   width: 10%;
   color: #029d5b;
 }
 .header-nav {
+  padding-right: 30px;
   width: 70%;
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
 }
 .header-nav a {
   text-decoration: none;
@@ -37,18 +38,17 @@ body {
 
 #banner img {
   width: 100%;
+  height: auto;
   object-fit: cover;
-  padding-bottom: 0;
 }
 #banner a {
   text-decoration: none;
 }
-#banner h1 {
+#banner p {
   display: flex;
   flex-direction: column;
   text-align: end;
-  margin-top: -300px;
-  margin-bottom: 0;
+  margin-top: -350px;
   color: rgb(255, 255, 255);
   font-size: 4rem;
   padding: 50px;
@@ -57,12 +57,15 @@ body {
   color: yellow;
   font-size: 5rem;
 }
+
 /*equipe*/
+
 #equipe {
-  margin-top: 50px;
+  margin-top: 100px;
 }
-.equipe-title h1 {
+.notre-equipe {
   text-align: center;
+  font-weight: 800;
   font-size: 3rem;
   color: #029d5b;
 }
@@ -81,11 +84,13 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 158px;
-  margin-right: 158px;
+  margin-left: 125px;
+  margin-right: 125px;
+  gap: 10px;
 }
 
 .item {
@@ -111,15 +116,19 @@ body {
   font-size: x-small;
   text-align: center;
 }
+
 /*Satisfaction clients*/
+
 #satisfaction {
-  background-color: #053b44;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  width: 100%;
-  height: 150px;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #053b44;
 }
 .client p {
   color: yellow;
@@ -132,37 +141,41 @@ body {
   color: aliceblue;
   margin-top: 0;
 }
+
 /*Services*/
+
 .service {
   width: 100%;
   height: auto;
 }
-.service h1 {
-  text-align: center;
+.service-titre {
   margin-top: 50px;
+  text-align: center;
+  font-weight: 800;
   font-size: 3rem;
   color: #029d5b;
 }
-.servico {
+.serv-icone {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center;
   flex-wrap: wrap;
-  gap: 250px;
+  gap: 20px;
 }
-.servico img {
+.serv-icone img {
   background-color: rgb(226, 226, 226);
   padding: 150px;
   border-radius: 20px;
   width: 447px;
   height: 435px;
 }
-.servico-p {
+.texte-icone-p {
   font-size: 2rem;
   text-align: center;
 }
+
 /*Formulaire*/
+
 #contact {
   width: 100%;
   height: 750px;
@@ -185,9 +198,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   gap: 20px;
-  width: 100vw;
   padding: 20px;
-  min-height: 50vh;
   color: white;
 }
 .form-ligne {
@@ -218,10 +229,10 @@ textarea {
   outline: none;
   padding: 0px;
   margin-bottom: 50px;
+  margin-top: 100px;
   font-size: 18px;
   background: transparent;
   width: 100%;
-  margin-top: 100px;
 }
 .mail-message {
   padding-left: 200px;
@@ -246,21 +257,25 @@ textarea {
   border-radius: 20px;
   width: auto;
 }
+/*
 button:focus,
 button:active {
   outline: none;
   border: none;
-}
+}*/
+
 /*A propos de nous*/
+
 /* général*/
+
 #Cnous {
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-evenly;
   width: 100%;
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 /*photo gauche*/
 .jasong {
   width: 700px;
@@ -268,8 +283,9 @@ button:active {
   margin-top: 50px;
   border-radius: 20px;
 }
+
 /*boite de droite général*/
-#lorem {
+.photoD {
   border: solid 2px;
   margin-top: 47px;
   margin-bottom: 5px;
@@ -278,6 +294,7 @@ button:active {
   border-color: #026d5b;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Titre + texte dans boite*/
 .titre1,
 .texte1 {
@@ -289,12 +306,14 @@ button:active {
   margin-top: 50px;
   margin-bottom: 0;
 }
+
 /*logo général dans boite*/
 #logonous {
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
 }
+
 /*logo traitements*/
 .log1 {
   display: flex;
@@ -310,7 +329,6 @@ button:active {
   border: 3px solid #053b44;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .vec2 {
@@ -333,6 +351,7 @@ button:active {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /*texte logo*/
 .textevec2,
 .textevec3,
@@ -342,7 +361,9 @@ button:active {
   font-weight: bold;
   text-align: center;
 }
+
 /*Carousel*/
+
 #galerie {
   width: 100%;
   display: flex;
@@ -354,6 +375,7 @@ button:active {
 }
 .titregalerie {
   font-size: 3rem;
+  font-weight: 800;
   color: #029d5b;
   margin-bottom: 0;
 }
@@ -364,7 +386,6 @@ button:active {
 #carouselcontainer {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .carousel {
@@ -414,6 +435,7 @@ button:hover {
 }
 
 /*info fin de page*/
+
 /*general*/
 .info-section {
   background-color: #0f3a40;
@@ -424,7 +446,7 @@ button:hover {
 .info-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Espace entre les colonnes */
+  justify-content: space-between;
   align-items: flex-start;
   max-width: 100%;
   margin: auto;
@@ -438,7 +460,7 @@ button:hover {
 .info-column {
   text-align: left;
   flex: 1;
-  margin-right: 20px; /* Espacement entre les colonnes */
+  margin-right: 20px;
 }
 
 /* Titres des colonnes */
@@ -478,7 +500,9 @@ button:hover {
   margin-right: 10px; /* Espace entre l'icône et le texte */
   font-size: 18px;
 }
+
 /*Footer*/
+
 footer {
   width: 100%;
   height: auto;
@@ -512,12 +536,23 @@ footer {
   font-size: 15px;
   color: white;
 }
-/*
+
 @media (max-width: 1120px) {
   .header-nav {
     flex-direction: column;
     align-items: flex-end;
   }
+}
+@media (max-width: 1080px) {
+  #banner p {
+    font-size: 1.5rem;
+    margin-top: -200px;
+  }
+  #banner p span {
+    font-size: 2rem;
+  }
+}
+/*
   .info-column {
     text-align: center;
   }
@@ -526,13 +561,7 @@ footer {
     flex-flow: column wrap;
     padding-left: 20px;
   }
-  #banner h1 {
-    font-size: 1.5rem;
-    margin-top: -200px;
-  }
-  #banner h1 span {
-    font-size: 2rem;
-  }
+ 
   .footerprojet p {
     flex-wrap: wrap;
     padding-left: 0;
@@ -555,4 +584,5 @@ footer {
   .carouselcontainer {
     flex-basis: 0;
   }
-}*/
+}
+*/

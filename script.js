@@ -1,4 +1,4 @@
-const images = document.querySelectorAll(".images img");
+/*const images = document.querySelectorAll(".images img");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 let index = 0;
@@ -20,3 +20,4 @@ nextBtn.addEventListener("click", () => {
 
 // Afficher la première image au chargement
 showImage(index);
+*/
