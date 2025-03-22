@@ -228,6 +228,7 @@ input {
 form ::placeholder {
   color: #ffffff;
   font-size: 18px;
+  font-family: "poppins", sans-serif;
 }
 textarea {
   border: none;
@@ -239,6 +240,7 @@ textarea {
   font-size: 18px;
   background: transparent;
   width: 100%;
+  font-family: "poppins", sans-serif;
 }
 .mail-message {
   padding-left: 200px;
@@ -542,6 +544,8 @@ footer {
   color: white;
 }
 
+/*Responsive header + bannière*/
+
 @media (max-width: 1120px) {
   .header-nav {
     flex-direction: column;
@@ -557,37 +561,38 @@ footer {
     font-size: 2rem;
   }
 }
-/*
-  .info-column {
-    text-align: center;
-  }
-  .footerprojet {
-    justify-content: flex-start;
-    flex-flow: column wrap;
-    padding-left: 20px;
-  }
- 
-  .footerprojet p {
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-}
-@media (max-width: 850px) {
-  .container {
-    flex-direction: column;
-  }
-  .info-section {
+
+/*Responsive formulaire*/
+
+@media (max-width: 750px) {
+  .form-ligne {
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 1435px) {
-  .info-container {
+    justify-content: start;
     flex-direction: column;
-    align-items: center;
-  }
-  .carouselcontainer {
-    flex-basis: 0;
   }
 }
-*/
+@media (max-width: 750px) {
+  .mail-message {
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 450px) {
+  textarea::placeholder {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 750px) {
+  #button-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
