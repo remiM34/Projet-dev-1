@@ -67,6 +67,8 @@ header {
 /*equipe*/
 
 #equipe {
+  width: 100%;
+  height: auto;
   margin-top: 100px;
 }
 .notre-equipe {
@@ -83,20 +85,13 @@ header {
   font-weight: 500;
   color: rgb(0, 0, 0);
 }
-#equipe h3 p {
-  text-align: center;
-}
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 125px;
-  margin-right: 125px;
-  gap: 10px;
 }
 
 .item {
@@ -110,6 +105,9 @@ header {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+#equipe h3 {
+  text-align: center;
 }
 
 .item h3 {
@@ -129,12 +127,15 @@ header {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  gap: 10px;
   background-color: #053b44;
+}
+.client {
+  padding-left: 95px;
+  padding-right: 95px;
 }
 .client p {
   color: yellow;
@@ -164,22 +165,19 @@ header {
 .serv-icone {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 20px;
 }
-.serv-icone img {
+.icone img {
   background-color: rgb(226, 226, 226);
   padding: 150px;
   border-radius: 20px;
   width: 447px;
   height: 435px;
 }
-.texte-icone-p {
-  font-size: 2rem;
+.serv-icone p {
   text-align: center;
+  font-size: x-large;
 }
-
 /*Formulaire*/
 
 #contact {
@@ -589,6 +587,20 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+  .serv-icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .serv-icone img {
+    padding: 75px;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .texte-icone-p {
+    font-size: 1.5rem;
   }
 }
 
