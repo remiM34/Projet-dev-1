@@ -162,19 +162,24 @@ header {
   font-size: 3rem;
   color: #029d5b;
 }
-.serv-icone {
+.icone {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
 }
+.icone div {
+  display: flex;
+  flex-direction: column;
+}
+
 .icone img {
   background-color: rgb(226, 226, 226);
   padding: 150px;
   border-radius: 20px;
-  width: 447px;
-  height: 435px;
+  width: 400px;
+  height: 400px;
 }
-.serv-icone p {
+.texte-logoservice p {
+  width: 400px;
   text-align: center;
   font-size: x-large;
 }
@@ -588,19 +593,22 @@ footer {
     align-items: center;
     gap: 10px;
   }
-  .serv-icone {
-    display: flex;
+  .icone {
     flex-direction: column;
     align-items: center;
   }
-  .serv-icone img {
+  .icone img {
+    display: flex;
+    align-self: center;
+  }
+  .icone img {
     padding: 75px;
     border-radius: 20px;
     width: 200px;
     height: 200px;
   }
-  .texte-icone-p {
-    font-size: 1.5rem;
+  .icone-p {
+    font-size: small;
   }
 }
 
