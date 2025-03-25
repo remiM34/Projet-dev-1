@@ -21,3 +21,11 @@ nextBtn.addEventListener("click", () => {
 // Afficher la première image au chargement
 showImage(index);
 */
+
+/* Burger */
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("menu");
+burger.addEventListener("click", () => {
+  nav.classList.toggle("nav-closed");
+});

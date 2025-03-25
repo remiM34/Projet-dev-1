@@ -12,28 +12,32 @@ body {
 
 /*Header*/
 
-.header {
+header {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-title {
   padding-left: 30px;
-  width: 10%;
   color: #029d5b;
 }
-.header-nav {
-  padding-right: 30px;
-  width: 70%;
+.menu {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
 }
-.header-nav a {
+.menu li {
+  margin: 0 30px;
+}
+.menu a {
   text-decoration: none;
   color: #333;
 }
-.header-nav a:hover {
+.menu a:hover {
   text-decoration: underline;
+}
+.burger {
+  display: none;
 }
 
 /* section banner */
@@ -553,10 +557,45 @@ footer {
   color: white;
 }
 
-/*Responsive header + bannière*/
+/*Responsive*/
 
-@media (max-width: 1120px) {
-  .header-nav {
+/*Phone*/
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 30px;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    margin: 3px;
+  }
+  nav {
+    width: 100%;
+  }
+  .nav-closed {
+    display: none;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Bannière et header général*/
+
+@media (max-width: 1215px) {
+  .menu {
     flex-direction: column;
     align-items: flex-end;
   }
