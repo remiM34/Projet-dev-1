@@ -164,6 +164,8 @@ header {
 .icone {
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .icone div {
   display: flex;
@@ -403,35 +405,33 @@ textarea {
 }
 
 button {
-  bottom: 10px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
-  color: rgb(0, 0, 0);
   border: solid 1px black;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
+
 .boutton {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
+
 button:hover {
   background-color: #f5f5f5;
-}
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
 }
 
 /*info fin de page*/
 
 /*general*/
 .info-section {
+  width: 100%;
+  height: auto;
   background-color: #0f3a40;
   padding: 30px 0;
 }
@@ -440,20 +440,13 @@ button:hover {
 .info-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 100%;
-  margin: auto;
-  padding: 10px;
-  gap: 80px;
-  margin-left: 150px;
-  margin-right: 50px;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 /* Colonnes d'informations */
 .info-column {
   text-align: left;
-  flex: 1;
   margin-right: 20px;
 }
 
@@ -475,9 +468,7 @@ button:hover {
 
 /* Colonne contact (Téléphone + Adresse) */
 .info-contact {
-  text-align: left;
   color: #c0c0c0;
-  flex: 1;
 }
 
 /* Alignement icônes + texte */
@@ -490,8 +481,8 @@ button:hover {
 
 /* Style des icônes */
 .info-contact i {
-  color: #c4f029; /* Couleur verte comme sur ton image */
-  margin-right: 10px; /* Espace entre l'icône et le texte */
+  color: #c4f029;
+  margin-right: 10px;
   font-size: 18px;
 }
 
@@ -509,25 +500,21 @@ footer {
 }
 .footerprojet p {
   color: white;
-  margin-right: 100px;
-  padding-left: 160px;
+  margin-left: 165px;
 }
 .reseaux {
-  display: flex;
-  word-spacing: 20px;
-  margin-right: 50px;
+  margin-right: 165px;
 }
-.reseaux .logofooter span {
-  display: inline-block;
+.reseaux span {
+  width: 30px;
+  height: 30px;
   border: 2px solid white;
-  border-radius: 25%;
-  padding: 3px;
-  margin: 5px;
+  border-radius: 20%;
   background-color: transparent;
 }
 
-.reseaux .logofooter i {
-  font-size: 15px;
+.reseaux i {
+  padding: 5px;
   color: white;
 }
 
@@ -582,6 +569,10 @@ footer {
   .icone-p {
     font-size: small;
   }
+  .info-container {
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
 /* Bannière et header général*/
@@ -599,6 +590,18 @@ footer {
   }
   #banner p span {
     font-size: 2rem;
+  }
+  .footerprojet {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerprojet p {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .reseaux {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 /*Responsive formulaire*/
@@ -633,5 +636,18 @@ footer {
 @media (max-width: 450px) {
   textarea::placeholder {
     font-size: 0.6rem;
+  }
+  #banner p {
+    font-size: 1rem;
+    margin-top: -150px;
+  }
+  #banner p span {
+    font-size: 1.2rem;
+  }
+  .footerprojet p {
+    font-size: x-small;
+  }
+  .reseaux {
+    font-size: small;
   }
 }
