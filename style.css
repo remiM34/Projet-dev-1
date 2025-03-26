@@ -69,7 +69,6 @@ header {
 #equipe {
   width: 100%;
   height: auto;
-  margin-top: 100px;
 }
 .notre-equipe {
   text-align: center;
@@ -250,6 +249,10 @@ textarea {
   width: 100%;
   font-family: "poppins", sans-serif;
 }
+#message {
+  margin-bottom: 0;
+  margin-top: 200px;
+}
 .mail-message {
   padding-left: 200px;
   padding-right: 200px;
@@ -270,13 +273,8 @@ textarea {
   font-size: 18px;
   border-radius: 20px;
   width: auto;
+  margin-bottom: 100px;
 }
-/*
-button:focus,
-button:active {
-  outline: none;
-  border: none;
-}*/
 
 /*A propos de nous*/
 
@@ -287,107 +285,77 @@ button:active {
   justify-content: center;
   width: 100%;
   height: auto;
-  margin-top: 30px;
-  gap: 30px;
+  margin-top: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /*photo gauche*/
 .photoG {
-  width: 50%;
+  width: 576px;
   height: auto;
-  display: flex;
-  justify-content: end;
 }
 .jasong {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin-top: 50px;
   border-radius: 20px;
-  object-fit: cover;
 }
 
-/*boite de droite général*/
-
-.photoD {
-  width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: start;
-}
-.cellule-photoD {
-  width: 70%;
-  height: 444.5px;
-  margin-top: 50px;
+/*boite de droite*/
+.cellule-droite {
+  width: 576px;
+  height: 384px;
   border: solid 2px;
   border-radius: 20px;
   border-color: #026d5b;
+}
+.contenu-cellule-droite {
+  width: 100%;
+  height: auto;
 }
 
 /*Titre + texte dans boite*/
 .titre1,
 .texte1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .titre1 {
   font-weight: bold;
   font-size: x-large;
 }
-
-/*logo général dans boite*/
-.logonous {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin-top: 70px;
+.texte1 {
+  margin-bottom: 30px;
 }
 
-/*logo traitements*/
-.log1 {
+/*logo et texte*/
+.contenu-logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo-texte {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.vec2,
-.vec3,
-.vec4 {
+.logo-texte span {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid #053b44;
+  border: 5px solid #053b45;
   display: flex;
-  justify-content: center;
-}
-
-.vec2 {
-  background-image: url("img/vec2.png");
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.vec3 {
-  background-image: url("img/vec3.png");
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.vec4 {
-  background-image: url("img/vec4.png");
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/*texte logo*/
-.textevec2,
-.textevec3,
-.textevec4 {
+  align-items: center;
+  justify-content: space-evenly;
   margin-top: 10px;
-  font-size: 16px;
+}
+.logo-texte img {
+  width: 40px;
+  height: 35px;
+}
+.logo-texte p {
+  color: #053b45;
+  font-size: 12px;
   font-weight: bold;
-  text-align: center;
 }
 
 /*Carousel*/
@@ -419,16 +387,19 @@ button:active {
 
 .carousel {
   width: 100%;
-  height: 600px;
+  height: auto;
 }
-
-.images img {
+.images {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.images img {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 
 button {
@@ -568,6 +539,7 @@ footer {
   .burger {
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
     cursor: pointer;
   }
   .burger span {
@@ -604,8 +576,8 @@ footer {
   .icone img {
     padding: 75px;
     border-radius: 20px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   .icone-p {
     font-size: small;
@@ -629,7 +601,6 @@ footer {
     font-size: 2rem;
   }
 }
-
 /*Responsive formulaire*/
 
 @media (max-width: 750px) {
@@ -640,8 +611,6 @@ footer {
     justify-content: start;
     flex-direction: column;
   }
-}
-@media (max-width: 750px) {
   .mail-message {
     padding-left: 10px;
     display: flex;
@@ -652,15 +621,17 @@ footer {
   input::placeholder {
     font-size: 0.6rem;
   }
-}
-@media (max-width: 450px) {
-  textarea::placeholder {
-    font-size: 0.6rem;
-  }
-}
-@media (max-width: 750px) {
   #button-container {
     display: flex;
     justify-content: flex-start;
+  }
+  .buttonsub {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  textarea::placeholder {
+    font-size: 0.6rem;
   }
 }
