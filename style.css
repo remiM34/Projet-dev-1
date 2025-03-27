@@ -9,11 +9,16 @@ body {
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /*Header*/
 
 header {
   width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -364,6 +369,7 @@ textarea {
 
 #galerie {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -496,14 +502,17 @@ footer {
   background-color: #032227;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  padding: 30px 165px;
 }
 .footerprojet p {
   color: white;
-  margin-left: 165px;
+  margin-left: 0;
 }
 .reseaux {
-  margin-right: 165px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
 .reseaux span {
   width: 30px;
@@ -521,6 +530,12 @@ footer {
 /*Responsive*/
 
 /*Phone*/
+@media (max-width: 410px) {
+  .icone {
+    display: flex;
+    align-content: center;
+  }
+}
 
 @media (max-width: 768px) {
   .burger {
@@ -571,7 +586,16 @@ footer {
   }
   .info-container {
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+  }
+  .info-column {
+    text-align: center;
+  }
+  #contact h1 {
+    font-size: 2rem;
+  }
+  #contact p {
+    font-size: 1rem;
   }
 }
 
