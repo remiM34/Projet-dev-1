@@ -432,52 +432,48 @@ button:hover {
   background-color: #f5f5f5;
 }
 
-/*info fin de page*/
+/* Footer*/
+footer {
+  width: 100%;
+  height: auto;
+}
 
-/*general*/
 .info-section {
   width: 100%;
   height: auto;
   background-color: #0f3a40;
-  padding: 30px 0;
 }
 
-/* Conteneur principal */
 .info-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 20px;
   gap: 10px;
 }
 
-/* Colonnes d'informations */
 .info-column {
   text-align: left;
   margin-right: 20px;
+  color: white;
 }
 
-/* Titres des colonnes */
 .info-column h3 {
   font-size: 25px;
   font-weight: bold;
-  color: white;
   margin-bottom: 4px;
   margin-top: 8px;
 }
 
-/* Texte des colonnes */
 .info-column p {
   font-size: 14px;
-  color: #c0c0c0;
   margin: 3px 0;
 }
 
-/* Colonne contact (Téléphone + Adresse) */
 .info-contact {
-  color: #c0c0c0;
+  color: #ffffff;
 }
 
-/* Alignement icônes + texte */
 .info-contact p {
   display: flex;
   align-items: center;
@@ -485,38 +481,33 @@ button:hover {
   margin: 5px 0;
 }
 
-/* Style des icônes */
 .info-contact i {
   color: #c4f029;
   margin-right: 10px;
   font-size: 18px;
 }
 
-/*Footer*/
-
-footer {
-  width: 100%;
-  height: auto;
-}
+/* Ajout de flexbox pour bien aligner les éléments */
 .footerprojet {
   background-color: #032227;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 165px;
+  padding: 10px 20px;
 }
-.footerprojet p {
+
+.copyright {
   color: white;
-  margin-left: 0;
+  text-align: left;
 }
+
 .reseaux {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
 }
+
 .reseaux span {
-  width: 30px;
-  height: 30px;
   border: 2px solid white;
   border-radius: 20%;
   background-color: transparent;
@@ -526,7 +517,6 @@ footer {
   padding: 5px;
   color: white;
 }
-
 /*Responsive*/
 
 /*Phone*/
@@ -584,13 +574,6 @@ footer {
   .icone-p {
     font-size: small;
   }
-  .info-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-column {
-    text-align: center;
-  }
   #contact h1 {
     font-size: 2rem;
   }
@@ -614,6 +597,13 @@ footer {
   }
   #banner p span {
     font-size: 2rem;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-column {
+    text-align: center;
   }
   .footerprojet {
     flex-direction: column;
