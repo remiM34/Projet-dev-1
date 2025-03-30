@@ -373,7 +373,6 @@ age {
   height: auto;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 .article {
   text-align: center;
@@ -566,9 +565,7 @@ footer {
   .textegalerie {
     font-weight: 400;
   }
-  .titregalerie {
-    margin-top: 0;
-  }
+
   .icone {
     flex-direction: column;
     align-items: center;
