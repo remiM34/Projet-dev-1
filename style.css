@@ -453,6 +453,8 @@ footer {
   justify-content: space-between;
   padding: 20px;
   gap: 10px;
+  padding-left: 270px;
+  padding-right: 270px;
 }
 
 .info-column {
@@ -490,7 +492,6 @@ footer {
   font-size: 18px;
 }
 
-/* Ajout de flexbox pour bien aligner les éléments */
 .footerprojet {
   background-color: #032227;
   display: flex;
@@ -502,12 +503,14 @@ footer {
 .copyright {
   color: white;
   text-align: left;
+  padding-left: 250px;
 }
 
 .reseaux {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
+  padding-right: 250px;
 }
 
 .reseaux span {
@@ -607,32 +610,42 @@ footer {
     align-items: flex-end;
   }
 }
-@media (max-width: 1080px) {
-  #banner p {
-    font-size: 1.5rem;
-    margin-top: -200px;
-  }
-  #banner p span {
-    font-size: 2rem;
-  }
+@media (max-width: 1300px) {
   .info-container {
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   .info-column {
     text-align: center;
+  }
+  .copyright {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .reseaux {
+    padding-left: 0;
+    padding-right: 0;
   }
   .footerprojet {
     flex-direction: column;
     align-items: center;
   }
+}
+@media (max-width: 1080px) {
+  #banner p {
+    font-size: 1.5rem;
+    margin-top: -200px;
+    display: flex;
+    align-items: center;
+  }
+  #banner p span {
+    font-size: 2rem;
+  }
   .footerprojet p {
     margin-left: 2px;
     margin-right: 2px;
-  }
-  .reseaux {
-    margin-right: 0;
-    margin-bottom: 10px;
   }
 }
 /*Responsive formulaire*/
